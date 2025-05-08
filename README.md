@@ -1,1 +1,1 @@
-portfolio website made by amazinaxel[https://github.com/AmazinAxel]
+portfolio website made by [amazinaxel](https://github.com/AmazinAxel)
