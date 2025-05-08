@@ -1,7 +1,6 @@
 body {
     background-image: url(/media/background.jpg);
-    background-size: auto;
-    background-position: cover;
+    background-size: cover;
     backdrop-filter: blur(0.5rem);
 }
 
@@ -56,6 +55,8 @@ p, a { color: var(--lightest3); }
         gap: 0.1rem;
         height: 6rem;
     }
+    #profile h1 { font-size: 3rem; }
+    #profile h2 { font-size: 1rem }
 }
 
 /* Link area */
@@ -66,6 +67,10 @@ p, a { color: var(--lightest3); }
     margin: -0.5rem 0rem 2rem;
 }
 #links a img { width: 1.5rem; height: 1.5rem; }
+
+#links a { transition: scale 0.5s var(--ease); }
+#links a:hover { scale: 1.1; }
+#links a:active { scale: 0.95; }
 
 /* AmazinAxel.com link arrow */
 a.linkArrow {

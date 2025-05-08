@@ -18,7 +18,7 @@
 	min-width: 0;
 	transform: translate3d(0, 0, 0);
 	overflow: hidden;
-	height: 30rem;
+	height: 20rem;
 }
 .embla__slide:not(.is-snapped) img {
 	opacity: 0.5;
@@ -58,7 +58,7 @@ button.embla__prev { left: -3rem; }
 }
 
 .embla__slide img {
-	height: 30rem;
+	height: 20rem;
 	object-fit: cover;
     width: 100%;
     border-radius: 0.5rem;

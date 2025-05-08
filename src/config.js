@@ -3,7 +3,7 @@ export const projects = [
 		title: 'Open Conflict',
 		description: 'A Roblox plane combat game (in development)',
 		image: 'open-conflict.png',
-		url: '',
+		url: 'https://discord.gg/xkWpGd7gTF'
 	},
 	{
 		title: 'ChimkenNuggz',
