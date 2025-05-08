@@ -1,12 +1,11 @@
 <script>
-	import Carousel from '$lib/components/carousel.svelte';
+	import Carousel from '$lib/carousel.svelte';
 	import { projects } from '$lib/config.js'
 	import { fade } from 'svelte/transition';
 </script>
 
 <svelte:head>
 	<title>DerpyDoggo</title>
-	<!-- Bottom-to-top in order of style importance -->
 	<link rel="stylesheet" href="/css/vars.css"/>
 	<link rel="stylesheet" href="/css/typography.css"/>
 	<link rel="stylesheet" href="/css/reset.css"/>
@@ -22,9 +21,7 @@
 	</div>
 
 	<!-- Projects list -->
-	<div>
-		<Carousel data={projects}></Carousel>
-	</div>
+	<Carousel data={projects}></Carousel>
 
 	<div id="links">
 		<a href="http://discordapp.com/users/587320323762946069"><img src="/media/icons/discord.svg" alt="Discord"/></a>

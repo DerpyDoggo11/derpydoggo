@@ -1,1 +1,3 @@
-portfolio website made by [amazinaxel](https://github.com/AmazinAxel)
+# DerpyDoggo's Portfolio website
+
+Website made by [AmazinAxel](https://github.com/AmazinAxel)
