@@ -10,12 +10,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 #profile img {
     border-radius: 50%;
-    width: 10rem;
+    width: 8rem;
 }
-#profile h1 { font-size: 5rem; font-family: var(--headerFont); }
+#profile h1 { font-size: 4.5rem; font-family: var(--headerFont); }
 #profile h2 {
     font-weight: 300;
     margin: -0.25rem 0 1rem 0;
@@ -27,7 +28,7 @@ main {
     font-family: 'Sora';
     max-width: 50rem;
     margin: auto;
-    padding-top: 5rem;
+    padding: 4rem;
     min-height: calc(100vh - 3rem); /* Height of page minus height of footer */
 }
 
@@ -40,13 +41,50 @@ footer {
     justify-content: space-between;
     padding: 1rem;
 }
-footer p, footer a { color: var(--lightest3); }
+p, a { color: var(--lightest3); }
+
+/* Mobile */
+@media (max-width: 44rem) {
+	main {
+        padding: 4rem 1rem;
+        min-height: calc(100vh - 6rem); /* Height of page minus height of footer */
+    }
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0.1rem;
+        height: 6rem;
+    }
+}
 
 /* Link area */
-
 #links {
     display: flex;
     justify-content: center;
-    gap: 0.3rem;
+    gap: 2rem;
+    margin: -0.5rem 0rem 2rem;
 }
-#links a { width: 1.5rem; }
+#links a img { width: 1.5rem; height: 1.5rem; }
+
+/* AmazinAxel.com link arrow */
+a.linkArrow {
+	display: flex;
+	line-height: 1.5rem;
+	text-decoration: none !important;
+	justify-content: flex-end;
+}
+.linkArrow::after {
+	content: url(/media/icons/arrow-right.svg);
+	margin-left: 4px;
+	height: 0;
+	filter: brightness(0) saturate(100%) invert(90%) sepia(22%) saturate(96%) hue-rotate(181deg)
+		brightness(98%) contrast(88%);
+	transition: transform 0.3s var(--ease);
+}
+.linkArrow:hover::after {
+	transform: translateX(2px);
+}
+.linkArrow:active::after {
+	transform: translateX(5px);
+}

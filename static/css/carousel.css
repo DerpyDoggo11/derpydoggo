@@ -2,60 +2,27 @@
 .embla {
 	overflow: hidden;
 	cursor: grab;
-	--slide-spacing: 1rem;
-	--slide-size: 100%;
+	--slide-size: 70%;
 	width: 100%;
 	position: relative;
+    border-radius: 0.5rem;
 }
 
 .embla__container {
 	display: flex;
-	margin-left: calc(var(--slide-spacing) * -1);
 	touch-action: pan-y pinch-zoom;
 }
 
 .embla__slide {
 	flex: 0 0 var(--slide-size);
 	min-width: 0;
-	padding-left: var(--slide-spacing);
 	transform: translate3d(0, 0, 0);
 	overflow: hidden;
 	height: 30rem;
-	border-radius: 0.5rem;
 }
-
-/* Actual carousel styling */
-.embla__slide .carouselContent {
-	position: absolute;
-	width: 50%;
-	left: 25%;
-	border-radius: 0.5rem;
-	backdrop-filter: blur(2rem);
-	-webkit-backdrop-filter: blur(2rem);
-	border: 3px solid #ffffff3b;
-	bottom: 1rem;
-	text-align: center;
-	box-shadow: 0px 10px 15px #ffffff4a;
-}
-
-.carouselContent h4 {
-	text-shadow: 0 0 1rem white;
-	margin: 0;
-	position: relative;
-}
-
-.carouselContent .name {
-	position: absolute;
-	width: 100%;
-	top: -1rem;
-}
-
-.carouselContent p {
-	padding: 1rem;
-}
-
-.carouselContent h6 {
-	font-size: 1.1rem;
+.embla__slide:not(.is-snapped) img {
+	opacity: 0.5;
+	scale: 0.8;
 }
 
 /* Carousel buttons (small) */
@@ -74,34 +41,36 @@
 	height: 100%;
 }
 
-@media (max-width: 1000px) {
-	.embla__slide .carouselContent {
-		width: calc(100% - 1rem);
-		left: 1rem;
-		bottom: 0;
-		box-shadow: none;
-	}
+/* Embla left/right arrows */
+button {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+	cursor: pointer;
+    border: 0;
 }
 
-/* Embla left/right arrows */
-.embla button {
-	position: absolute;
-	top: 40%;
-	min-width: revert;
-	background: transparent;
-	backdrop-filter: blur(2rem) brightness(0.8);
-	border-radius: 10px;
-	box-shadow: 0 0 10px 0 var(--darkest1) !important;
-}
-button.embla__next {
-	right: 1rem;
-}
-button.embla__prev {
-	left: 1rem;
+button.embla__next { right: -3rem; }
+button.embla__prev { left: -3rem; }
+@media (max-width: 44rem) {
+	button.embla__next { right: 3rem; }
+	button.embla__prev { left: 3rem; }
 }
 
 .embla__slide img {
 	height: 30rem;
 	object-fit: cover;
     width: 100%;
+    border-radius: 0.5rem;
+	transition: opacity 0.5s var(--ease), scale 0.5s var(--ease);
+}
+
+/* Info section */
+.projectInfo {
+	text-align: center;
+    margin-top: 1rem;
+}
+.projectInfo h2 {
+	font-family: var(--headerFont);
+    font-size: 2rem;
 }
