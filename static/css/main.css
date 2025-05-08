@@ -1,0 +1,52 @@
+body {
+    background-image: url(/media/background.jpg);
+    background-size: auto;
+    background-position: cover;
+    backdrop-filter: blur(0.5rem);
+}
+
+/* Profile */
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profile img {
+    border-radius: 50%;
+    width: 10rem;
+}
+#profile h1 { font-size: 5rem; font-family: var(--headerFont); }
+#profile h2 {
+    font-weight: 300;
+    margin: -0.25rem 0 1rem 0;
+    color: var(--darkest4);
+}
+
+/* Card */
+main {
+    font-family: 'Sora';
+    max-width: 50rem;
+    margin: auto;
+    padding-top: 5rem;
+    min-height: calc(100vh - 3rem); /* Height of page minus height of footer */
+}
+
+/* Footer */
+footer {
+    font-family: var(--primaryFont);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+footer p, footer a { color: var(--lightest3); }
+
+/* Link area */
+
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+#links a { width: 1.5rem; }
