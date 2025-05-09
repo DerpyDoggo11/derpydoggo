@@ -68,8 +68,8 @@ p, a { color: var(--lightest3); }
 }
 #links a img { width: 1.5rem; height: 1.5rem; }
 
-#links a { transition: scale 0.5s var(--ease); }
-#links a:hover { scale: 1.1; }
+#links a { transition: scale 0.3s var(--ease); }
+#links a:hover { scale: 1.2; }
 #links a:active { scale: 0.95; }
 
 /* AmazinAxel.com link arrow */

@@ -2,10 +2,7 @@
 	import { projects } from '../config.js'
     import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-	const transition1 = { y: -10, duration: 700, delay: 500, easing: quintOut };
-	const transition2 = { y: -10, duration: 700, delay: 600, easing: quintOut };
-	const transition3 = { y: -10, duration: 700, delay: 900, easing: quintOut };
-	const transition4 = { y: -10, duration: 700, delay: 1200, easing: quintOut };
+	const transition = (delay) => ({ y: -10, duration: 700, delay, easing: quintOut });
 
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import carouselClassNames from 'embla-carousel-class-names'
@@ -19,7 +16,8 @@
 
 	const onSlideMoved = () => 
 		currentlySelected = emblaAPI.selectedScrollSnap();
-	
+
+	// Animate on load by forcing reaction
 	let pageAnimation = $state(false);
 	setTimeout(() => (pageAnimation = true), 1);
 </script>
@@ -35,20 +33,20 @@
 
 	<main>
 		{#if pageAnimation}
-			<div id="profile" in:fly|local={transition1}>
+			<div id="profile" in:fly|local={transition(500)}>
 				<img src="/media/derpydoggo.jpeg" alt="DerpyDoggo's Profile"/>
 				<h1>DerpyDoggo</h1>
 				<h2>Awesome dev who makes games and other stuff</h2>
 			</div>
 
-			<div id="links" in:fly|local={transition2}>
+			<div id="links" in:fly|local={transition(600)}>
 				<a href="http://discordapp.com/users/587320323762946069" target="_blank" rel="noopener noreferrer"><img src="/media/icons/discord.svg" alt="Discord"/></a>
-				<a href="https://www.youtube.com/@derpydoggo11" target="_blank" rel="noopener noreferrer"><img src="/media/icons/youtube.svg" alt="YouTube"/></a>
 				<a href="https://github.com/DerpyDoggo11" target="_blank" rel="noopener noreferrer"><img src="/media/icons/github.svg" alt="GitHub"/></a>
+				<a href="https://www.youtube.com/@derpydoggo11" target="_blank" rel="noopener noreferrer"><img src="/media/icons/youtube.svg" alt="YouTube"/></a>
 			</div>
 
 			<!-- Projects list -->
-			<div style="position: relative;" in:fly|local={transition3}>
+			<div style="position: relative;" in:fly|local={transition(900)}>
 				<section class="embla" use:emblaCarouselSvelte={{ options, plugins }} onemblaInit={initAPI}>
 					<div class="embla__container">
 						{#each projects as { title, image }}
@@ -61,7 +59,7 @@
 				<button class="embla__prev" onclick={() => emblaAPI.scrollPrev()}><img class="noImgStyle" src="/media/icons/arrow-left.svg" alt="Left arrow"></button>
 				<button class="embla__next" onclick={() => emblaAPI.scrollNext()}><img class="noImgStyle" src="/media/icons/arrow-right.svg" alt="Right arrow"></button>
 			</div>
-			<section class="projectInfo" in:fly|local={transition4}>
+			<section class="projectInfo" in:fly|local={transition(1100)}>
 				{#if projects[currentlySelected].url}
 					<a href={projects[currentlySelected].url} target="_blank" rel="noopener noreferrer"><h2>{projects[currentlySelected].title}</h2></a>
 				{:else}
