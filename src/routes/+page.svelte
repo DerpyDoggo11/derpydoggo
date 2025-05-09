@@ -74,5 +74,5 @@
 
 <footer>
 	<p>Copyright (c) {new Date().getFullYear()} DerpyDoggo • All Rights Reserved <a href="https://github.com/DerpyDoggo11/derpydoggo" target="_blank" rel="noopener noreferrer">(Source)</a></p>
-	<a href="https://amazinaxel.com" class="linkArrow" target="_blank" rel="noopener noreferrer">Made by AmazinAxel (big bro)</a>
+	<a href="https://amazinaxel.com" class="linkArrow" target="_blank" rel="noopener noreferrer">Website made by AmazinAxel (big bro)</a>
 </footer>
