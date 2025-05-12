@@ -52,7 +52,7 @@ button {
 
 button.embla__next { right: -3rem; }
 button.embla__prev { left: -3rem; }
-@media (max-width: 44rem) {
+@media (max-width: 56rem) {
 	button.embla__next { right: 3rem; }
 	button.embla__prev { left: 3rem; }
 }

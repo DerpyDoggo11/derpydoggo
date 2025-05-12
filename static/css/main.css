@@ -43,7 +43,7 @@ footer {
 p, a { color: var(--lightest3); }
 
 /* Mobile */
-@media (max-width: 44rem) {
+@media (max-width: 56rem) {
 	main {
         padding: 4rem 1rem;
         min-height: calc(100vh - 6rem); /* Height of page minus height of footer */
