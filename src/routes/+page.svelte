@@ -24,6 +24,7 @@
 
 <svelte:head>
 	<title>DerpyDoggo</title>
+	<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b5608c6a6b7142029032fd79f1ff6911"}'></script><!-- End Cloudflare Web Analytics -->
 	<link rel="stylesheet" href="/css/vars.css"/>
 	<link rel="stylesheet" href="/css/typography.css"/>
 	<link rel="stylesheet" href="/css/reset.css"/>
