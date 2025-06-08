@@ -55,7 +55,7 @@ export const projects = [
 	},
 	{
 		title: 'Mowerbot',
-		description: 'A basic 3D printed lawn mower robot run by an esp32 (in development)',
+		description: 'A lawn mower robot run by an esp32 and two hoverboard motors (in development)',
 		image: 'mowerbot.jpg',
 		url: ''
 	}
