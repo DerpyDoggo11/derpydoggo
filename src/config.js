@@ -12,6 +12,12 @@ export const projects = [
 		url: ''
 	},
 	{
+		title: 'Nocturn',
+		description: 'A Minecraft murder mystery game (nocturn.minekeep.gg)',
+		image: 'nocturn.png',
+		url: 'https://discord.gg/hJnapqFFC4'
+	},
+	{
 		title: 'LED Volumetric Display',
 		description: 'A persistance of vision (POV) display using an arduino, slip ring, and motor',
 		image: 'volumetric-display.png',
