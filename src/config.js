@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		title: 'Kingdom RTS',
-		description: '[🥇 Minekeep August 2025 Gamejam Winner]<br>Real Time Strategy Game in Minecraft (kingdomrts.minekeep.gg)',
+		description: '[🥇 Minekeep September 2025 Gamejam Winner]<br>Real Time Strategy Game in Minecraft (kingdomrts.minekeep.gg)',
 		image: 'kingdom-rts.png',
 		url: 'https://discord.gg/FvpeerxExV'
 	},
