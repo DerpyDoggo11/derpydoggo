@@ -21,7 +21,7 @@ export const projects = [
 		title: 'Linked',
 		description: '[🥇 Projects August 2025 Gamejam Winner]<br>Minecart Extraction Game in Minecraft (linkedmk.minekeep.gg)',
 		image: 'linked.png',
-		url: 'https://discord.gg/EbFtPMvFGd'
+		url: ''
 	},
 	{
 		title: 'ChimkenNuggz',
