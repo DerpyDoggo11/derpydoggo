@@ -13,8 +13,14 @@ export const projects = [
 	},
 	{
 		title: 'Open Conflict',
-		description: 'Plane Combat Simulator in Roblox (in development)',
+		description: 'Plane Combat Simulator on Roblox (in development)',
 		image: 'open-conflict.png',
+		url: 'https://discord.gg/EbFtPMvFGd'
+	},
+	{
+		title: 'Linked',
+		description: '[🥇 Projects August 2025 Gamejam Winner]<br>Minecart Extraction Game in Minecraft (linkedmk.minekeep.gg)',
+		image: 'linked.png',
 		url: 'https://discord.gg/EbFtPMvFGd'
 	},
 	{
