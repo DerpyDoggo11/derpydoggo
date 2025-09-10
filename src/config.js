@@ -25,7 +25,7 @@ export const projects = [
 	},
 	{
 		title: 'ChimkenNuggz',
-		description: '[🥈 Xenon 2024 Gamejam Placement]<br>Turn-Based Strategy Game in Minecraft (chimkennuggz.minekeep.gg)',
+		description: '[🥈 Xenon 2024 Gamejam Winner]<br>Turn-Based Strategy Game in Minecraft (chimkennuggz.minekeep.gg)',
 		image: 'chimkennuggz.png',
 		url: ''
 	},
