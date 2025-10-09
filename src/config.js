@@ -43,7 +43,7 @@ export const projects = [
 	},
 	{
 		title: 'Doggobot',
-		description: 'A quadruped robot utilizing inverse kinematics (in development)',
+		description: 'A quadruped robot utilizing FABRIK inverse kinematics and a 3-bar linkage design (in development)',
 		image: 'doggobot.jpg',
 		url: ''
 	},
