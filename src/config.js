@@ -30,6 +30,12 @@ export const projects = [
 		url: ''
 	},
 	{
+		title: 'Planetary Motion Simulation',
+		description: 'A 3D Keplerian planetary motion simulation made in Processing, utilizing the vis-viva equation',
+		image: 'planetary-motion.png',
+		url: 'https://github.com/DerpyDoggo11/Planetary-Motion-Simulation'
+	},
+	{
 		title: 'Mowerbot',
 		description: 'A lawn-mower robot with integrated pathfinding and PID control (in development)',
 		image: 'mowerbot.jpg',
