@@ -31,9 +31,21 @@ export const projects = [
 	},
 	{
 		title: 'Planetary Motion Simulation',
-		description: 'A 3D Keplerian planetary motion simulation made in Processing, utilizing the vis-viva equation',
+		description: '3D planetary motion simulation made in Processing, utilizing the vis-viva equation.',
 		image: 'planetary-motion.png',
 		url: 'https://github.com/DerpyDoggo11/Planetary-Motion-Simulation'
+	},
+	{
+		title: 'Keplerian Orbit Simulation',
+		description: '3D Keplerian Orbit simulation made in Processing, using the Keplerian Equation for modeling planet trajectory.',
+		image: 'ellipse-planetary-motion.png',
+		url: 'https://github.com/DerpyDoggo11/Ellipse-Planetary-Motion-Simulation'
+	},
+	{
+		title: 'Keplerian Anomalies Simulation',
+		description: '2D Simluation tool for visualizing anomalies used in the Keplerian Equation. Made in Processing',
+		image: 'planetary-anomalies.png',
+		url: 'https://github.com/DerpyDoggo11/Planetary-Motion-Anomalies-Simulation'
 	},
 	{
 		title: 'Mowerbot',
